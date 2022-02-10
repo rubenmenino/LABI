@@ -1,0 +1,8 @@
+CREATE TABLE musicas(
+name TEXT, 
+duration INTEGER, 
+date TEXT, 
+uses INTEGER DEFAULT 0, 
+upvotes INTEGER DEFAULT 0, 
+downvotes INTEGER DEFAULT 0,
+id INTEGER PRIMARY KEY AUTOINCREMENT);

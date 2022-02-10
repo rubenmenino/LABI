@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="pt">
+	<head>
+		<title>Incêndios</title>
+		<!--Icon-->
+		<link rel="shortcut icon" href="img/Intelligence.ico">
+
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/estilo.css">
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="javascript/navbar.js"></script>
+		<script type="text/javascript" src="javascript/scroll.js"></script>
+		
+		<!-- 	Mapa
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
+		<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+		<script type="text/javascript" src="../javascript/mapa.js"></script> -->
+
+	</head>
+
+	
+	
+<!--Menu Principal-->
+	<body onload="navbar()">
+
+		<section class="cover-1 text-center">
+			<nav class="navbar navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
+				<div class="container">
+					<img src="img/Intelligence.png" width="30" height="30" class="d-inline-block align-top"/>
+					<a class="navbar-brand" href="#">Incêndios</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse pull-xs-right justify-content-end" id="navbarSupportedContent" >
+						<ul class="navbar-nav mt-2 mt-md-0">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">Início</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								  Conteúdo
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								  <a class="dropdown-item" href="pages/dados_estatisticos.html">Dados estatísticos</a>
+								  <a class="dropdown-item" href="pages/tipos_queimaduras.html">Queimaduras</a>
+								  <a class="dropdown-item" href="pages/apoios.html">Apoios à população</a>
+								   <a class="dropdown-item" href="pages/prevençao.html">Prevenção de incêndios</a>
+								</div>
+							</li>
+							</li>
+							<li class="nav-item">
+								<a class="scroll nav-link" href="#ligacao">Contactos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="pages/sobrenos.html">Sobre Nós</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</section>
+<!--Fim Menu-->
+			<br></br>
+			<br></br>
+
+
+<!--Desemvolvimento-->
+	<!--1ªSection-->
+		<section class="cover-1 text-center">
+			<div class="cover-container pb-5">
+				<div class="cover-inner container">
+					<h1 class="titulo-imagem"><strong>Bombeiros Aveiro</strong></h1>
+					<h2 class="lead">Os bombeiros de Aveiro dão-lhe as boas vindas.</h2>
+					<a href="#contactar" class="principal"> > Reportar Problema < </a>
+				</div>
+			</div>
+		</section>
+
+			<br></br>
+			<br></br>
+
+	<!--2ªSection-->
+		<section class="contact-1 center" >
+			<div class="row justify-content-md-center">
+			<div class="col col-lg-2"></div>
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					</ol>
+
+					<div class="carousel-inner col-md-auto">
+						<div class="carousel-item peopleCarouselImg active">
+							<img class="d-block " src="img/fogo11.jpg" alt="First slide" title="Imran Mughal">
+							<div class="carousel-caption d-none d-md-block">
+								<h3>Bombeiros</h3>
+								<p>Destemidos</p>
+							</div>
+						</div>
+						<div class="carousel-item peopleCarouselImg">
+							<img class="d-block" src="img/fogo12.jpg" alt="Second slide" title="Military_Material">
+							<div class="carousel-caption d-none d-md-block">
+								<h3>Bombeiros</h3>
+								<p>Corajosos</p>
+							</div>
+						</div>
+						<div class="carousel-item peopleCarouselImg">
+							<img class="d-block" src="img/fogo5.jpg" alt="Third slide" title="skeeze">
+							<div class="carousel-caption d-none d-md-block">
+								<h3>Bombeiros</h3>
+								<p>Soldados Firmes</p>
+							</div>
+						</div>
+
+
+					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+					</div>
+
+				</div>
+				<div class="col col-lg-2"></div>
+			</div>
+		</section>
+
+
+		<br></br>
+		<br></br>
+
+	<!--3ªSection-->
+		<section class="content-1 numero">
+			<div class="row">
+			<div class="container conteudo">
+
+				<div class="titulo text col-sm-8" style="color:white">
+					<h2>Em caso de incêndio contactar 112 ou 117</h2>
+				</div>
+
+<!--Button to Popup -->
+				<center>
+					<button type="button" class="ghost imagem col-sm-6" style="text align:center" data-toggle="modal" data-target="#exampleModal">
+					  <b>Alerta</b>
+					</button>
+				</center>
+				</div>
+<!--Popup -->
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Linha 117</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+							<div class="modal-body">
+								Apenas ligue para este número em caso de incêndio.
+							</div>
+							<div class="modal-footer">
+							<button type="button" class="ghost" style="width:60px" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					  </div>
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+		<br></br>
+		<br></br>
+
+
+	<!--4ªSection-->
+		<section>
+		<div class="container">
+			<div id="map"></div>
+				<script src="javascript/maps.js"></script>
+				
+			<script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBptaDKT_ntSoNEytCnSang5JenaNAj_Us&callback=initMap">
+			</script>
+		</div>
+			
+		</section>
+		<br><br>
+
+		
+		
+	<!--5ªSection-->
+		<section class="contact-1">
+			<div id="contactar" class="container">
+				<div class="row contact-details">
+					<div class="col-sm-8 text-center text-md-left ">
+						<h3>Reportar Problema</h3>
+						<form class="contact-form mt-4" >
+							<div class="row">
+								<div class="input-group input-group-sm col-md-4">
+
+									<span class="input-group-addon mb-4" id="sizing-addon2">Nome</span>
+									<input type="text" class="form-control-custom mb-4 form-control" placeholder="Digite o seu nome" aria-label="Digite o seu nome" aria-describedby="sizing-addon2"/>
+
+									<!--<label for="nome">Nome:</label>
+									<input id="nome" type="text" class="form-control-custom mb-4" placeholder="Digite o seu nome" />-->
+								</div>
+								<div class="input-group input-group-sm col-md-4">
+									<span class="input-group-addon mb-4" id="sizing-addon2">@</span>
+									<input type="text" class="form-control-custom mb-4 form-control" placeholder="Digite o seu email" aria-label="Digite o seu email" aria-describedby="sizing-addon2"/>
+								</div>
+								<br>
+							</div>
+							<div class="row">
+								<div class="input-group-sm col-md-8">
+									<!--<span class="input-group-addon col-md-12" id="sizing-addon2">Descreva Problema</span>-->
+									<textarea class="form-control-custom mb-4 form-control" id="comment" placeholder="Digite mensagem" aria-label="Digite mensagem" aria-describedby="sizing-addon2"></textarea>
+
+									<button type="submit" class="ghost">Enviar Mensagem</button>
+
+								</div>
+							</div>
+						</form>
+					</div>
+					<div id="ligacao" class="col-sm-4 text-center text-md-left">
+						<h3>Contactos</h3>
+						<h4 class="pt-4">Email</h4>
+						<p>secretaria@bombeirosnovos.pt</p>
+						<h4 class="pt-2">Telefone</h4>
+						<p>234 422 333</p>
+						<h4 class="pt-2">Morada</h4>
+						<p> R. Conselheiro L. Magalhães,<br/> 3800 Aveiro</p><br>
+					</div>
+				</div>
+			</div>
+		</section>
+		<br>
+<!--Fim Desemvolvimento-->
+
+<!--Rodapé-->
+		<footer class="rodape">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center text-md-center mt-2 mb-3 pt-1">
+						<p class="copyright">&copy; Copyright Bombeiros de Aveiro. Todos os direitos reservados.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+<!--Fim Rodapé-->
+
+	</body>
+
+</html>

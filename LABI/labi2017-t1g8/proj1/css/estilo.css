@@ -1,0 +1,174 @@
+#map {
+  height: 450px;
+  width: 100%; }
+  
+/*navbar*/
+.navbar{
+	background-color: #190B07;
+	color: white;
+}
+
+/*Tipo de letra no body*/
+body {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #46484a;
+}
+
+/*Justificar texto*/
+p.ajusta{
+	text-align: justify;
+	text-indent: 50px;
+}
+
+/*Ajusta titulo*/
+.titulo{
+	text-align: center;
+}
+
+/*Justificar legenda*/
+p.ajusta2{
+	text-align: justify;
+}
+
+/*rodape*/
+.rodape{
+	color:white;
+	background:#190B07;
+}
+/*rodape 2*/
+.rodape2{
+	color:white;
+	background:#190B07;
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*Titulo Principal com imagem nas letras*/
+.titulo-imagem{
+	width:100%;
+	height:auto;
+	text-transform: uppercase;
+	text-align: center;
+	color:white;
+	font-weight:700;
+	font-size: 10em;
+	background-image:url(../img/fogo3.jpg);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* Button */
+button.ghost{
+	width:200px;
+	height:50px;
+	margin: 10px;
+	background:white;
+	color: #DF0101;
+	border: solid 2px #DF0101;
+	border-radius: 50px;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition:0.3s;
+	transition:color 0.3s ease-out;
+}
+button.ghost:hover{
+	background-color:#DF0101;
+	color: white;
+}
+
+/*Button Principal*/
+a.principal{
+	background:white;
+	color: #DF0101;
+	text-transform: uppercase;
+	text-align: center;
+	line-height:60px;
+	margin: 10px;
+	text-decoration:none;
+	font-size:20px;
+	font-family: verdana;
+	letter-spacing:4px;
+	border-radius: 100px;
+	border: solid 2px #DF0101;
+	cursor: pointer;
+	display: inline-block;
+	-webkit-transition:0.3s;
+	transition:color 0.3s ease-out;
+}
+a.principal:hover{
+	background-color:#DF0101;
+	color: white;
+}
+
+/*área de texto*/
+textarea{
+	width:100%;
+	height:150px;
+	display: block;
+	overflow:hidden;
+	resize:none;
+}
+
+
+/* imagens do slide*/
+.peopleCarouselImg img {
+	width: auto;
+	height: 600px;
+	max-height: 600px;
+}
+
+/*Tabela*/
+.table{
+	width: 700px;
+	height: auto;
+	text-align: center;
+}
+
+/*imagem das queimaduras*/
+.queimadura{
+	height: 300px;
+	width: auto;
+}
+
+/* medidas das nossos fotos*/
+.fotonos{
+	width:200px;
+	height:200px;
+}
+
+/*opacidade*/
+.opac{
+	background:#000;
+	opacity: 0.7;
+	filter:alpha(opacity=70);
+}
+
+/*para fazer a 3ª secção - aviso*/
+.conteudo{
+	display:table;
+}
+.imagem{
+	display: table-cell;
+}
+.text{
+	display: table-cell;
+}
+.numero{
+	background-color: #190B07;
+}
+
+/*Fundo do DropDouwn da navbar*/
+.dropdown-item.active{
+    color: #fff;
+    text-decoration: none;
+    background-color: #190B07;
+}
+.dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #61210B;
+}

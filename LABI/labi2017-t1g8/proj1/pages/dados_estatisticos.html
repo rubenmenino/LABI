@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt">
+	<head>
+		<title>Incêndios</title>
+		<!--Icon-->
+		<link rel="shortcut icon" href="../img/Intelligence.ico">
+
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<link rel="stylesheet" href="../css/estilo.css">
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
+		<script type="text/javascript" src="../javascript/grafico-linhas.js"></script>
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+		<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+
+	</head>
+
+	<body onload="circularGrafico()">
+
+<!--Menu Principal-->
+		<section class="cover-1 text-center">
+			<nav class="navbar navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
+				<div class="container">
+					<img src="../img/Intelligence.png" width="30" height="30" class="d-inline-block align-top"/>
+					<a class="navbar-brand" href="#">Incêndios</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse pull-xs-right justify-content-end" id="navbarSupportedContent">
+						<ul class="navbar-nav mt-2 mt-md-0">
+							<li class="nav-item">
+								<a class="nav-link" href="../index.html">Início</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								  Conteúdo
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								  <a class="dropdown-item active" href="#">Dados estatísticos</a>
+								  <a class="dropdown-item" href="tipos_queimaduras.html">Queimaduras</a>
+								  <a class="dropdown-item" href="apoios.html">Apoios à população</a>
+								  <a class="dropdown-item" href="prevençao.html">Prevenção de incêndios</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="../pages/sobrenos.html">Sobre Nós</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			</section>
+<!--Fim Menu-->
+			<br> </br>
+			<br> </br>
+			
+<!--Desenvolvimento-->
+			<section>
+			<div class="row">
+			  <div class="titulo col-12"><h1> Dados estatísticos relacionados com os incêndios</h1></div>
+			</div>
+			<br></br>
+
+
+			<div class="row">
+				<div class="col-sm-1"></div>
+					<div class="col-sm-10"><p class="ajusta">
+						Existem diversas entidades responsáveis pelo estudo estatístico dos incêndios, como o Instituto Nacional de Estatística, Proteção Civil Portugal, Instituto de conservação da natureza e das florestas e GNR.
+						Estes dados obtidos permitem a análise a diversos aspetos como as causas dos incêndios, o número de incêndios florestais e a quantidade de área ardida num determinado ano.</p>
+					</div>
+				<div class="col-sm-1"></div>
+				</div>
+			</div>
+			<br>
+
+			<div class="row">
+			<div class="col-sm-1"></div>
+				<div class="col-sm-6"><p class="ajusta">
+					Segundo os dados obtidos podemos verificar que apenas uma ínfima percentagem de incêndios florestais é de causa natural.
+					Verifica-se também que cerca de 19% dos incêndios têm obra de mão criminosa.
+					Relativamente as causas acidentais e por uso do fogo verificamos que tem uma grande percentagem associada (37%), estes são causados muitas vezes por negligência.
+					É essencial que se atue ao nível da prevenção para diminuir esta percentagem, para isso é importante a divulgação de informação de modo a alertar as populações dos cuidados que devem ser tomados para a prevenção de possíveis incêndios.</p>
+				</div>
+
+
+				<div class="col-sm-4">
+					<div id="contain" style="height: 400px"></div>
+				</div>
+			<div class="col-sm-1"></div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-sm-1"></div>
+
+				<div class="col-sm-4 text-center" >
+					<div id="grafico-linhas" style="width: 600px; height: 450px;">
+						<button class="ghost" onclick="desenhaGrafico()"> Gráfico </button>
+					</div>
+
+				</div>
+				<div class="col-sm-1"></div>
+				<div class="col-sm-5"><p class="ajusta">
+					Clique no botão Grafico ao lado para poder analizar e observar que o número de hectares de área ardida tem vindo a aumentar significativamente
+					nos últimos 3 anos, sendo 2017 o 3ºano mais afetado desde 2001. Apesar de a área ardida em 2017 ter aumentado relativamente aos outros anos,
+					o número de incêndios registados tem diminuindo em média desde 2001 até 2017. Isto deve-se à maior divulgação de informação à população relativa
+					à prevenção dos incêndios, como a proibição de queimadas em determinadas alturas do ano e todos os cuidados que a população deve tomar de modo a
+					evitar estas ocorrências.
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+			</section>
+			<br></br>
+<!--Fim Desenvolvimento-->			
+			
+<!--Rodapé-->			
+		<footer class="rodape">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center text-md-center mt-2 mb-3 pt-1">
+						<p class="copyright">&copy; Copyright Bombeiros de Aveiro. Todos os direitos reservados</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+<!--Fim Rodapé-->
+		
+	</body>
+	
+</html>

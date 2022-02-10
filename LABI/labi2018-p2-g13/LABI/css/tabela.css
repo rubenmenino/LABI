@@ -1,0 +1,46 @@
+﻿ #button {
+                background-color: #DDAAAA;
+                height: 100px;
+                width: 150px;
+            }
+
+            button.pressed {
+                background-color: red;
+            }
+
+
+#tablediv {
+	overflow-x:auto;
+	position: absolute;
+	margin: auto;
+	margin-top: 5%;
+	right: 0;
+	left: 0;
+	width: 1000px;
+	height: 300px;
+}
+
+#musictable {
+	width: 1000px;
+	height: 300px;
+	background-color: #DDDDDD;
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+.input {
+	width: 40px;
+	height: 40px;
+}
+
+button {
+	height:35px;
+	width:45px;
+	margin-right:-20px;
+	margin-top:-50px;
+	margin-bottom:-5px;
+	padding:20px 26px 25px 10px ;
+}
+
+
+
